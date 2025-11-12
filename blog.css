@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.pixelify-sans-regular {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    position: relative;
+
+    margin: 0;
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: left;
+}
+
+.rightSidebar h1 {
+    color: plum;
+}
+
+h3 {
+    color: palevioletred;
+}
+
+.container {
+
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+
+  box-sizing: border-box;
+}
+
+.menu {
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    border: dashed 10px;
+    border-color: purple;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+}
+
+.title {
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+    color: gray;
+    font-family: "Faculty Glyphic", sans-serif;
+    background-color: black;
+
+    padding: 5px 50px 5px;
+    margin-bottom: 20px;
+
+}
+
+.siteNavigation {
+    margin: 0;
+    box-sizing: border-box;
+    width: 480px;
+    height: 50px;
+}
+
+
+.navButton {
+    float: left;
+    background-color: black;
+    border: groove purple;
+    font-family: "Pixelify Sans", Courier, monospace;
+    font-size: large;
+    align-content: center;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 50px;
+    width: 90px;
+    color: white;
+    text-decoration: none;
+}
+
+.navButton:hover {
+    background: black;
+    color: pink;
+    border-color: pink;
+    cursor: pointer;
+}
+
+#Button5 {
+    background: black;
+    color: pink;
+    border-color: pink;
+    cursor: crosshair;
+}
+
+section {
+    background: black;
+    color: white;
+
+    padding: 15px 100px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+    width: 480px;
+
+    font-family: "Faculty Glyphic", sans-serif;
+}
+
+.rightSidebar {
+  position: relative;
+  margin-left: 20px;
+  box-sizing: border-box;
+  background-color: black;
+  border: outset purple 2px;
+  color: white;
+  height: fit-content;
+  width: 50vw;
+  max-width: 100%;
+  min-width: 50%;
+  padding: 20px;
+  line-height: 30px;
+
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+.rightSidebar div[id] {
+    display: none;
+}
+
+
+.rightSidebar div[id]:target {
+    display: block;
+}
+
+.rightSidebar:target {
+    display: block;
+}
+
+.homeButton {
+    background: black;
+    color: white;
+    border-color: purple;
+    padding: 15px 100px 15px;
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+    max-width: 300px;
+    width: 100vh;
+
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.homeButton:hover {
+    background: black;
+    color: pink;
+    border-color: pink;
+    cursor: pointer;
+}
+
+#legacy {
+    margin-top: 30px;
+    max-width: fit-content;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: underline;
+    color: inherit;
+}
+
+body {
+    background-image: url("blog.gif");
+    animation: loopingText 110s linear infinite;
+    height: 100vh;
+}
+
+
+@keyframes loopingText {
+	0% {
+		background-position: 0% 0%;
+	}
+  
+	100% {
+		background-position: 100% 100%;
+	}
+}

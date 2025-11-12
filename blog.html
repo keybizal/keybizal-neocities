@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keybizal's void v2</title>
+    <link href="blog.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Pixelify+Sans&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="flex">
+
+            <div class="menu">
+                <div class="siteNavigation">
+                    <button class="navButton" id="Button1" onclick="location.href='./index.html'">home</button>
+                    <button class="navButton" id="Button2" onclick="location.href='./about.html'">about</button>
+                    <button class="navButton" id="Button3" onclick="location.href='./projects.html'">projects</button>
+                    <button class="navButton" id="Button4" onclick="location.href='./links.html'">links</button>
+                    <button class="navButton" id="Button5" ">blog</button>
+                </div>
+
+                <div class="title">
+                    <h1>blog</h1>
+                    <h2>click an entry below</h2>
+                </div>
+                <!--blog entries are linked here-->
+                <div class="sidebar">
+                    <section id="entries">
+                        <h2>2025</h2>
+                        <a href="#1">11/8/2025 - welcome</a><br>
+                        <a href="#2">11/8/2025 - chromebook catastrophe</a><br>
+
+                    </section>
+
+                </div>
+            </div>
+                <!--create entry here-->
+            <aside class="rightSidebar">
+                <div id="1">
+                    <h1>welcome to my blog</h1>
+                    <p>I don't write often but when I do, It can go here on my blog. Never did one before so this is like my first time. Also I might make grammatical errors or just full on spitball.</p>
+                    <br>
+                    <h3>why did you make this website</h3>
+                    <p>Making this website was alot. I never had so much passion for such a project like this in a while. When I made my strawpage, it was a silly thing first but I felt like I could do better. So I fixed it and spend 7 hours of my day fixing the whole website. It was beautiful, but that was about a year ago probably.</p>
+                    <br>
+                    <p>Now I wanted to do better than that. While spending time in college, I felt mixed feelings, I was doing well in my studies and has little time for art in general, but I also didn't feel the drive to make any art or draw like I used to. Likely I was afraid, or maybe it was the doomscrolling. Either way, on a saturday night. I looked up the following.<br>
+                    <br>
+                    <h4>
+                        "Do I have art block or am I not meant to be an artist?"
+                    </h4>
+                    <br> 
+                    I searched for answers to this question, mostly through reddit. Then, I was watching a video and barely through the first 30 seconds I cried in front of my monitor. It was 11:00PM. I don't know why I did but it was for a good minute. <a href="https://www.youtube.com/watch?v=JRtZc_Nmo5w">Anyways this was the video lol.</a></p>
+                    <br>
+                    <p>Monday morning, I had thought about moving over to neocities for a while so I let my thoughts take over and I open VSCode, download Live Server, and start typing out my html whilst having multiple stack overflow tabs, documentation, and other websites... Then it took up all of my evenings that week. Every evening I spent hours upon hours typing away.</p>
+                    <br>
+                    <p>And now... it is done... I might feel that same feeling making my strawpage again after I create this one. Regardless.</p>
+                    <br>
+                    <p>Thank you for staying.</p>
+                    <br>
+                    <h3>what's the evil button</h3>
+                    <p>what evil button?<i style="color: black;"> you mean......... <a href="https://www.google.com/search?q=specimen+9">this?</a></i></p>
+                </div>
+                <div id="2">
+                    <h1>chromebook catastrophe</h1>
+                    <p>So I wanted to write an entry over something that already happened last year at almost the same time as I am writing this. All I had was this heavy gaming laptop that started to see some damage as I carried it around everywhere for college.</p>
+                    <br>
+                    <p>That was until I realized I had a spare laptop to use that I got for free. The problem was that ...it's a chromebook... so knowing how chromebooks operate, I acutally couldn't make much use out of it anyways. That was until I decide to take on the journey of eradicating ChromeOS from the system and replacing it with Debian. Below are a list of guides I used to accomplish this successfully.</p>
+                    <br>
+                    <ul>
+            
+                    <li>
+                        <a href="https://www.quantulum.co.uk/blog/linux-on-a-chromebook/">https://www.quantulum.co.uk/blog/linux-on-a-chromebook/</a>
+                    </li>
+                    <li>
+                        <a href="https://www.quantulum.co.uk/blog/debian-on-a-chromebook/">https://www.quantulum.co.uk/blog/debian-on-a-chromebook/</a>
+                    </li>
+                    <li>
+                        <a href="https://docs.mrchromebox.tech/">https://docs.mrchromebox.tech/</a>
+                    </li>
+                    <li>
+                        <a href="https://docs.chrultrabook.com/">https://docs.chrultrabook.com/</a>
+                    </li>
+                </ul>
+                <br>
+                <p>For anyone willing to try this, know that <b><i>this is a huge risk and will void any warranties</i></b>. For me, I had nothing to lose.</p>
+                <br>
+                <p>On a regular computer, you just uhh download the thing, put in on the flash drive, boot from it, and install and done right? Since chromebooks are so DAMN secure, you must cross multiple hurdles to be even able to install an OS, so firstly, we must enable...</p>
+                <br>
+                <h3>developer mode</h3>
+                <p>... well not yet actually... First we need to enter recovery mode by holding ESC and REFRESH. Then we choose "Boot from internal disk". Do note that everything will be reset. From here we "browse as guest" and go into a web browser... chrome of course... it's a chromebook. I want to note, <a href="https://www.quantulum.co.uk/blog/linux-on-a-chromebook/">this guide will help you better than I will on this blog.</a> I'm just reflecting.</p>
+                <br>
+                <h3>the firmware script</h3>
+                <p>Now we are going to use "MrChromeBox's Firmware Utility Script". So I ended up doing first RW_LEGACY then the Full ROM after, most likely because I realized that wasn't what I wanted. Before going further, <a href="https://docs.mrchromebox.tech/docs/supported-devices.html">I had to make sure my chromebook would work with the script (and later stuff).</a> Then I could continue. So uhh we use the web browser to uhhh "open a command prompt" you know like windows (technically its a crosh shell). Then you run this script.<br>
+                    <br>
+                    <h4>
+                        "cd; curl -LOf mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh"
+                    </h4>
+                    <br> 
+                I run that script a lot and I still do to check for firmware updates. When the script loads as it should, there are 4 options and you will only have access to 2 (WP is foreshadowing for future suffering). I went with option 1 for now. Install the firmware, and input this thing afterwards and run.<br>
+                    <br> 
+                    <h4>
+                        "sudo crossystem dev_boot_altfw=1"
+                    </h4>
+                    <br>
+                If nothing happens, good, you can just "sudo reboot". From here, you can choose to dual boot but that is not the path I took. I wanted the whole Linux, no ChromeOS. This mean't that I needed to disable..
+                </p>
+                <br>
+                <h3>write protection</h3>
+                <p>This is the worst part of the whole process and is completely dependent on what chomebook you have. There are three methods to <a href="https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html">disable write protection</a> and only one of them worked with my chromebook (the worst option).</p>
+                <br>
+                <ul>
+                    <li>
+                        Disconnecting the Battery
+                    </li>
+                    <li>
+                        Bridging a Jumper
+                    </li>
+                    <li>
+                        Using a SuzyQable?
+                    </li>
+                </ul>
+                <br>
+                <p>Huh? What's a SuzyQable? Doesn't matter because you can't buy one anymore right? Right? Right? Right? RIGHT?! RIGHT?!!!!</p>
+                <br>
+                <p>Ok so I did the first two options first to see if they worked (they didn't). So I had to do the third option which was split into two parts. First you must enable Closed Case Debugging. Remember the guides I linked? Specifically the one that underlines "disable write protection"? I used those, well except for uh, getting the cable part but well get to it soon. So after that process of enabling CCD, I now needed a SuzyQable. But uhhh what is a SuzyQable? Well simply it's a ChromeOS Debug Cable specifically for, well, exactly what we are doing. But you see they don't really sell them so like after searching and searching and searching for days for a cable that I can order, <a href="https://www.ebay.com/itm/316024978790">I found something close.</a> It's an adapter but... it has to work with my phone charger cable right? .....it did. So now I could continue through the rest of the instructions very carefully like I have been doing. Also there was another step like "Disable AP RO Firmware Verification" but I don't remember doing that.</p>
+                <br>
+                <h3>the firmware script part 2</h3>
+                <p><i>Ah free at last (false).</i> Now we go back to the script to double check if WP is off and indeed it was. Another thing to note was I also had to buy like two flash drives. One for the required chromeos backup and the other for my choosen linux distro. So I flash the UEFI Full Rom Firmware as per the instructions (waiting included). And now all that's left was to install the OS simple right? ...............................no </p>
+                <br>
+                <h3>debian does not install</h3>
+                <p>So I booted up the live USB of Debian 12 and went through the install process, choosing the largest partition to put Debian on (there were 8+ separate partitions, to this day I don't know what they are). So it's installing right up until I get an error and now I'm like what the hell do I do now? It's not like I can fix the partition now right? .... I can... so there's is thing I found called GParted and you can put it on another usb (see how many usbs i had to buy bruh) and change all of the partitions at ease and change file system formats and everything.</p>
+                <br>
+                <p>Booting up GParted LIVE (heh it's on debian), I find that big partition and carefully contemplate my next moves. From what I remember, I chose to remove that whole partiton, and either I left it at that or I created a new partition with the file system it wanted (ext4). Either way, I applied my changes, waited, rebooted into the live usb for debian and.... it ... worked!</p>
+                <br>
+                <h3>the end</h3>
+                <p>and now I boot up into my fresh, debian 12 xfce, on my wretched chromebook.........until.....now... the audio doesn't work.... the keypad doesn't work..... bluetooth is missing.... why is it failing to boot sometimes?..... the whole damn thing freezes when I have chrome and discord open.....the laptop lid doesn't shut the computer off........... WE ARE NOT DONE YET WE ARE NOT DONE YET WE ARE NOT DONE YET</p>
+                <br>
+                <h3>debian is still broken</h3>
+                <p>Ok first, remember it's still not an actual regular pc, it's a chromebook, we made serious modifications to it already and there is still more to be made. I won't be covering everything I did here because this blog is already abnormally long but I will cover the most important things I had to fix after install. Afterall, with most linux distros, you have to do that anyways.</p>
+                <br>
+                <p>So using <a href="https://docs.chrultrabook.com/docs/installing/post-install.html#drivers-and-qol-improvements">this place now</a> and <a href="https://www.quantulum.co.uk/blog/debian-on-a-chromebook/">this one too</a> to fix common issues, I wanted to fix audio first (longest to fix for some reason) and the keyboard (cause it's a chromebook keyboard).</p>
+                <br>
+                <p>I begin the setup and execution of <a href="https://github.com/WeirdTreeThing/chromebook-linux-audio">this script</a> until... my board isn't supported???? So for like the first time ever I open a GitHub issue to add the board (fyi, each chromebook has a different board name). So a month passes and it's finally configured to work on my chromebook. I run the script again after updating it and.... it's still not working.... so. Now I create another issue and have a chat back and forth over steps I must take, things I must install, logs to send over, eventually after randomly configuring the volume profile to Pro Audio, it worked... finally.</p>
+                <br>
+                <p>While all of this stuff happened over months, I ran the <a href="https://github.com/WeirdTreeThing/cros-keyboard-map">keyboard script</a> and it worked without issue.</p>
+                <br>
+                <h3>the real end</h3>
+                <p>So now I fix everything else missing by downloading whatever is missing like a boss and from that point on, tt was operable!!! I take my chromebook everywhere for work and leave my gaming laptop at my place hooked up to a second monitor, keyboard, mouse, it's basically a fake desktop if you think about it.</p>
+                <br>
+                <p>Anyways, my blogs are not supposed to be this long, this is very much an exception. If you took the time to read this.... thanks....</p>
+
+                </div>
+                <br>
+                <hr>
+                    <p>keybizal's void</p>
+            </aside>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

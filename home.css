@@ -1,0 +1,137 @@
+body {
+  background-color: black;
+  overflow-y: hidden;
+}
+
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.pixelify-sans-regular {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+
+.leftSidebar {
+  position: relative;
+  margin-right: 20px;
+  box-sizing: border-box;
+  background-color: black;
+  border: outset purple 2px;
+  color: white;
+  height: 400px;
+  width: 200px;
+  padding: 20px;
+  align-self: center;
+
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightSidebar {
+  position: relative;
+  margin-left: 20px;
+  box-sizing: border-box;
+  background-color: black;
+  border: outset purple 2px;
+  color: white;
+  height: 400px;
+  width: 200px;
+  padding: 20px;
+  align-self: center;
+
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+.title {
+  overflow: hidden;
+  position: relative;
+  color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: black;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/02/Television_static.gif);
+  border: groove gray;
+
+  padding: 5px 50px 5px;
+  margin-bottom: 20px;
+}
+
+.homeButton {
+  background: black;
+  color: white;
+  border-color: purple;
+  padding: 15px 15px;
+  margin-bottom: 20px;
+
+  box-sizing: border-box;
+  max-width: 300px;
+  width: 100vh;
+
+  font-family: "Pixelify Sans", Courier, monospace;
+  font-size: large;
+  text-align: center;
+}
+
+.homeButton:hover {
+  background: black;
+  color: pink;
+  border-color: pink;
+  cursor: pointer;
+}
+
+#toTakeTheDead {
+  cursor: pointer;
+}
+
+/*
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+*/
+
+body {
+  background-image: url("home.gif");
+  animation: loopingText 30s linear infinite;
+  height: 100vh;
+}
+
+
+
+
+@keyframes loopingText {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
