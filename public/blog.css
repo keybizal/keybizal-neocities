@@ -100,6 +100,7 @@ body {
   }
 
   .homeButton {
+    display: block;
     position: fixed;
     bottom: 1vh;
     right: 5vw;

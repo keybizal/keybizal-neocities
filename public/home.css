@@ -137,9 +137,6 @@ body {
 }
 
 @media only screen and (max-width: 414px) {
-  img {
-    size: 150%;
-  }
 
   .homeButton {
     max-width: 80vw;
