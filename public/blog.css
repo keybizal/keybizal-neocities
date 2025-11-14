@@ -74,7 +74,11 @@ body {
     height: 100vh;
 }
 
-@media only screen and (max-width: 360px) {
+.homeButton {
+    display: none;
+}
+
+@media only screen and (max-width: 414px) {
 
   html {
     scroll-behavior: smooth;
