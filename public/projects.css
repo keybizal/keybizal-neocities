@@ -56,8 +56,16 @@ body {
   height: 100vh;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 360px) {
   .projects {
-    max-width: 450px;
+    max-width: 320px;
+  }
+
+  #legacy {
+    width: 320px;
+  }
+
+  #legacy .homeButton {
+    padding: 15px 30px 15px;
   }
 }

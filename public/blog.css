@@ -74,7 +74,7 @@ body {
     height: 100vh;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 360px) {
 
   html {
     scroll-behavior: smooth;
@@ -98,7 +98,10 @@ body {
   .homeButton {
     position: fixed;
     bottom: 1vh;
-    right: auto;
+    right: 5vw;
+    align-self: center;
+    max-width: 90px !important;
+    padding: 15px 15px 15px !important;
   }
 
 

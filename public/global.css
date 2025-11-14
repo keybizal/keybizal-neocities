@@ -148,18 +148,27 @@ a:active {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 360px) {
   .menu {
-    max-width: 500px;
+    max-width: 360px;
+  }
+
+  .title {
+    padding: 0;
   }
 
   .siteNavigation {
-    max-width: 480px;
     justify-content: center;
+    max-width: 340px;
+  }
+
+  .navButton {
+    font-size: x-small;
+    width: 62px
   }
   
   section {
-    max-width: 450px;
+    max-width: 320px;
     padding-left: 10px;
     padding-right: 10px;
   }
