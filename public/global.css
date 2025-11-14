@@ -147,3 +147,21 @@ a:active {
     background-position: 100% 100%;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .menu {
+    max-width: 500px;
+  }
+
+  .siteNavigation {
+    max-width: 480px;
+    justify-content: center;
+  }
+  
+  section {
+    max-width: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}

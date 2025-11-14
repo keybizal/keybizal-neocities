@@ -55,3 +55,9 @@ body {
   animation: loopingText 50s linear infinite;
   height: 100vh;
 }
+
+@media only screen and (max-width: 500px) {
+  .projects {
+    max-width: 450px;
+  }
+}

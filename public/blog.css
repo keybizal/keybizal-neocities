@@ -68,54 +68,38 @@ section {
     display: block;
 }
 
-.homeButton {
-    background: black;
-    color: white;
-    border-color: purple;
-    padding: 15px 100px 15px;
-    margin-bottom: 20px;
-
-    box-sizing: border-box;
-    max-width: 300px;
-    width: 100vh;
-
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-}
-
-.homeButton:hover {
-    background: black;
-    color: pink;
-    border-color: pink;
-    cursor: pointer;
-}
-
-#legacy {
-    margin-top: 30px;
-    max-width: fit-content;
-}
-
-a,
-a:visited,
-a:hover,
-a:active {
-    text-decoration: underline;
-    color: inherit;
-}
-
 body {
     background-image: url("blog.gif");
     animation: loopingText 110s linear infinite;
     height: 100vh;
 }
 
+@media only screen and (max-width: 500px) {
 
-@keyframes loopingText {
-	0% {
-		background-position: 0% 0%;
-	}
-  
-	100% {
-		background-position: 100% 100%;
-	}
+  html {
+    scroll-behavior: smooth;
+  }
+    
+  .container {
+    max-width: 500px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .rightSidebar {
+    position: relative;
+    margin-left: 0;
+    width: 100vw;
+    max-width: 500px;
+  }
+
+  .homeButton {
+    position: fixed;
+    bottom: 1vh;
+    right: auto;
+  }
+
+
 }
