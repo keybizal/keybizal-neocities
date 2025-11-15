@@ -61,8 +61,13 @@ body {
 .siteNavigation {
   margin: 0;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
   width: 700px;
   height: 50px;
+  column-gap: 5px;
+  margin-top: 5px;
+  
 }
 
 
@@ -73,8 +78,7 @@ body {
   font-family: "Pixelify Sans", Courier, monospace;
   font-size: large;
   align-content: center;
-  margin-left: 5px;
-  margin-top: 5px;
+
   height: 50px;
   width: 90px;
   color: white;
