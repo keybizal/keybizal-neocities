@@ -9,9 +9,11 @@ function toTakeTheDead() {
     document.getElementsByClassName('homeButton')[2].style.border = "groove red";
     document.getElementsByClassName('homeButton')[3].style.border = "groove red";
     document.getElementsByClassName('homeButton')[4].style.border = "groove red";
+    document.getElementsByClassName('homeButton')[5].style.border = "groove red";
     document.getElementsByClassName('leftSidebar')[0].style.border = "groove red";
     document.getElementsByClassName('rightSidebar')[0].style.border = "groove red";
     document.getElementById('toTakeTheDead').style.cursor = "not-allowed";
     document.getElementById('toTakeTheDead').textContent = "TO TAKE THE DEAD"
+    document.getElementById('toggleBG').style.display = "none";
     return false;
 }

@@ -110,6 +110,12 @@ body {
   cursor: pointer;
 }
 
+#toggleBG {
+  position: fixed;
+  padding: 15px 15px 15px;
+  max-width: 150px;
+}
+
 /*
 a, a:visited, a:hover, a:active {
   text-decoration: none;
@@ -136,7 +142,11 @@ body {
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 720px) {
+
+  #toggleBG {
+    display: block;
+  }
 
   .homeButton {
     max-width: 80vw;

@@ -78,7 +78,13 @@ body {
     display: none;
 }
 
-@media only screen and (max-width: 414px) {
+#toggleBG {
+    display: block;
+    position: fixed !important;
+    top: 93vh !important;
+}
+
+@media only screen and (max-width: 720px) {
 
   html {
     scroll-behavior: smooth;
@@ -109,5 +115,13 @@ body {
     padding: 15px 15px 15px !important;
   }
 
+  #toggleBG {
+    display: block !important;
+    position: fixed !important;
+    bottom: 1vh !important;
+    right: 95vw !important;
+    max-width: 120px !important;
+    z-index: 99;
+  }
 
 }
