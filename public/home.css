@@ -116,12 +116,12 @@ body {
   max-width: 150px;
 }
 
-/*
+
 a, a:visited, a:hover, a:active {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: underline;
+  color: pink;
 }
-*/
+
 
 body {
   background-image: url("home.gif");
@@ -143,11 +143,11 @@ body {
 }
 
 @media only screen and (max-width: 720px) {
-
+  
   #toggleBG {
-    display: block;
+    display: none;
   }
-
+  
   .homeButton {
     max-width: 80vw;
   }

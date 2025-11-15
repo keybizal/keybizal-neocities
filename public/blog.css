@@ -114,7 +114,7 @@ body {
     max-width: 90px !important;
     padding: 15px 15px 15px !important;
   }
-
+  /*
   #toggleBG {
     display: block !important;
     position: fixed !important;
@@ -123,5 +123,6 @@ body {
     max-width: 120px !important;
     z-index: 99;
   }
+  */
 
 }
