@@ -11,7 +11,7 @@
   background-color: black;
   border: solid black 10px;
 
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto auto;
 
   column-gap: 20px;
   row-gap: 20px;
@@ -24,7 +24,7 @@
   background-color: black;
   border: solid black 10px;
 
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
 
   column-gap: 20px;
   row-gap: 20px;
@@ -40,6 +40,8 @@
 
   min-width: 0;
   min-height: 0;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .grid-item img {
@@ -48,6 +50,16 @@
   object-fit: cover;
   min-width: 100%;
   min-height: 100%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.grid-item #baldi {
+  object-fit: fill;
+}
+
+section {
+  width: 1200px !important;
 }
 
 body {

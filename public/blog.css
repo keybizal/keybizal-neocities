@@ -36,6 +36,7 @@ h3 {
 
 section {
     width: 480px !important;
+    padding: 15px 50px 15px !important;
 }
 
 .rightSidebar {
