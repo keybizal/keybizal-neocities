@@ -37,7 +37,7 @@ body {
   margin-right: 30px;
   box-sizing: border-box;
   background-color: black;
-  border: outset purple 2px;
+  border: dashed #58189A 2px;
   color: white;
   height: 400px;
   width: 300px;
@@ -60,7 +60,7 @@ body {
   margin-left: 30px;
   box-sizing: border-box;
   background-color: black;
-  border: outset purple 2px;
+  border: dashed #58189A 2px;
   color: white;
   height: 400px;
   width: 300px;
@@ -86,7 +86,7 @@ body {
 .homeButton {
   background: black;
   color: white;
-  border-color: purple;
+  border-color: #9D4EDD;
   padding: 15px 15px;
   margin-bottom: 20px;
 
@@ -101,8 +101,8 @@ body {
 
 .homeButton:hover {
   background: black;
-  color: pink;
-  border-color: pink;
+  color: #C5EFCB;
+  border-color: #C5EFCB;
   cursor: pointer;
 }
 
@@ -119,7 +119,7 @@ body {
 
 a, a:visited, a:hover, a:active {
   text-decoration: underline;
-  color: pink;
+  color: #E0AAFF;
 }
 
 

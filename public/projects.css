@@ -1,7 +1,7 @@
 #Button3 {
   background: black;
-  color: pink;
-  border-color: pink;
+  color: #C5EFCB;
+  border-color: #C5EFCB;
   cursor: crosshair;
 }
 
@@ -66,6 +66,12 @@ body {
   background-image: url("projects.gif");
   animation: loopingText 50s linear infinite;
   height: 100vh;
+}
+
+@media only screen and (max-width: 1250px) {
+  #toggleBG {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 720px) {

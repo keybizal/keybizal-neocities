@@ -3,11 +3,11 @@ body{
 }
 
 .rightSidebar h1 {
-    color: plum;
+    color: #C5EFCB;
 }
 
 h3 {
-    color: palevioletred;
+    color: #A9C5A0;
 }
 
 .container {
@@ -29,8 +29,8 @@ h3 {
 
 #Button5 {
     background: black;
-    color: pink;
-    border-color: pink;
+    color: #C5EFCB;
+    border-color: #C5EFCB;
     cursor: crosshair;
 }
 
@@ -44,7 +44,7 @@ section {
   margin-left: 20px;
   box-sizing: border-box;
   background-color: black;
-  border: outset purple 2px;
+  border: dashed #58189A 2px;
   color: white;
   height: fit-content;
   width: 50vw;

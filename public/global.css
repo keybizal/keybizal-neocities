@@ -37,12 +37,13 @@ body {
 .menu {
   margin: 0 auto;
   width: fit-content;
-  border: dashed 10px;
-  border-color: purple;
+  border: double 10px;
+  border-color: #58189A;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   background: black;
+  background-image: url(elementbg.png);
 }
 
 .title {
@@ -74,7 +75,7 @@ body {
 .navButton {
   float: left;
   background-color: black;
-  border: groove purple;
+  border: groove #9D4EDD;
   font-family: "Pixelify Sans", Courier, monospace;
   font-size: large;
   align-content: center;
@@ -87,13 +88,12 @@ body {
 
 .navButton:hover {
   background: black;
-  color: pink;
-  border-color: pink;
+  color: #C5EFCB;
+  border-color: #C5EFCB;
   cursor: pointer;
 }
 
 section {
-  background: black;
   color: white;
 
   padding: 15px 100px 15px;
@@ -109,7 +109,7 @@ section {
 .homeButton {
   background: black;
   color: white;
-  border-color: purple;
+  border-color: #9D4EDD;
   padding: 15px 100px 15px;
   margin-bottom: 20px;
 
@@ -124,8 +124,8 @@ section {
 
 .homeButton:hover {
   background: black;
-  color: pink;
-  border-color: pink;
+  color: #C5EFCB;
+  border-color: #C5EFCB;
   cursor: pointer;
 }
 
