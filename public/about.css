@@ -10,3 +10,7 @@ body {
   animation: loopingText 50s linear infinite;
   height: 100vh;
 }
+
+img {
+  width: 360px;
+}

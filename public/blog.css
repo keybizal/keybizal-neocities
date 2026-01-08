@@ -75,6 +75,12 @@ body {
     height: 100vh;
 }
 
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
 .homeButton {
     display: none;
 }
