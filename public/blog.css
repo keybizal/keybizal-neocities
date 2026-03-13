@@ -10,6 +10,18 @@ h3 {
     color: #A9C5A0;
 }
 
+h4 {
+    color: #7f9478;
+}
+
+b {
+  color: #d6a4ff;
+}
+
+i {
+  color: #daffdf;
+}
+
 .container {
   box-sizing: border-box;
 }
@@ -49,7 +61,7 @@ section {
   height: fit-content;
   width: 50vw;
   max-width: 100%;
-  min-width: 50%;
+  min-width: 525px;
   padding: 20px;
   line-height: 30px;
 
@@ -79,15 +91,24 @@ img {
     display: block;
     margin: auto;
     width: 50%;
+    max-height: 300px;
+    object-fit: contain;
 }
 
 .homeButton {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 85vh;
+    left: 10px;
+    align-self: center;
+    max-width: 90px !important;
+    padding: 15px 15px 15px !important;
 }
 
 #toggleBG {
     display: block;
     position: fixed !important;
+    min-width: 150px;
     top: 93vh !important;
 }
 
@@ -115,8 +136,8 @@ img {
   .homeButton {
     display: block;
     position: fixed;
-    bottom: 1vh;
-    right: 5vw;
+    top: 86vh;
+    left: 82vw;
     align-self: center;
     max-width: 90px !important;
     padding: 15px 15px 15px !important;
