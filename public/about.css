@@ -14,3 +14,11 @@ body {
 img {
   width: 360px;
 }
+
+@media only screen and (max-width: 720px) {
+
+  img {
+    visibility: hidden;
+    display: none;
+  }
+}

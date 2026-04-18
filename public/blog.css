@@ -32,7 +32,13 @@ i {
 }
 
 .menu {
-    height: fit-content !important;
+  
+    position: fixed;
+    left: 10%;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .siteNavigation {
@@ -53,15 +59,14 @@ section {
 
 .rightSidebar {
   position: relative;
-  margin-left: 20px;
+  margin-left: 650px;
   box-sizing: border-box;
   background-color: black;
   border: dashed #58189A 2px;
   color: white;
   height: fit-content;
-  width: 50vw;
-  max-width: 100%;
-  min-width: 525px;
+  width: 50%;
+  max-width: 800px;
   padding: 20px;
   line-height: 30px;
 
@@ -96,7 +101,7 @@ img {
 }
 
 .homeButton {
-    display: block;
+    display: flex;
     position: fixed;
     top: 85vh;
     left: 10px;
@@ -109,7 +114,21 @@ img {
     display: block;
     position: fixed !important;
     min-width: 150px;
-    top: 93vh !important;
+
+}
+
+.altTitle {
+  display: none;
+
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  color: gray;
+  font-family: "Faculty Glyphic", sans-serif;
+  background-color: black;
+
+  padding: 5px 50px 5px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -118,19 +137,21 @@ img {
     scroll-behavior: smooth;
   }
     
-  .container {
-    max-width: 500px;
-  }
-
-  .flex {
-    flex-direction: column;
-  }
 
   .rightSidebar {
+    display:none;
     position: relative;
     margin-left: 0;
     width: 100vw;
     max-width: 500px;
+  }
+
+  div .title, .sidebar {
+    display: none;
+  }
+
+  .altTitle {
+    display: block;
   }
 
   .homeButton {
