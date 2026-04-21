@@ -5,6 +5,14 @@
   cursor: crosshair;
 }
 
+.subtitle {
+  color: #C5EFCB;
+}
+
+h3 {
+  color: #A9C5A0;
+}
+
 body {
   background-image: url("about.gif");
   animation: loopingText 50s linear infinite;
