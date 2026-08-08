@@ -53,13 +53,22 @@
   max-height: 200px;
 }
 
-.grid-item #lw3 {
+img.fill {
   object-fit: fill;
 }
 
-.grid-item #baldi {
-  object-fit: fill;
+img.contain {
+  object-fit: contain;
 }
+
+img.top {
+  object-position: top;
+}
+
+img.right {
+  object-position: right;
+}
+
 
 section {
   width: 1200px !important;
