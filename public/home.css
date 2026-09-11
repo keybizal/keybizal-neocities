@@ -180,6 +180,8 @@ body {
 
   .mobileSidebar {
     display: block;
+    align-content: center;
+    margin: 0px;
   }
 
   h3 {
