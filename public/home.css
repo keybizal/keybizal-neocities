@@ -70,6 +70,22 @@ body {
   font-family: "Faculty Glyphic", sans-serif;
 }
 
+.mobileSidebar {
+  display: none;
+  position: relative;
+  margin-left: 30px;
+  box-sizing: border-box;
+  background-color: black;
+  border: dashed #58189A 2px;
+  color: white;
+  height: auto;
+  width: 300px;
+  padding: 20px;
+  align-self: center;
+
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
 .title {
   overflow: hidden;
   position: relative;
@@ -155,4 +171,17 @@ body {
   .leftSidebar, .rightSidebar {
     display: none;
   }
+
+  .mobileSidebar {
+    display: block;
+  }
+
+  h3 {
+    margin: auto auto 10px auto;
+  }
+
+  .homeButton#toTakeTheDead {
+    display: none;
+  }
+
 }
