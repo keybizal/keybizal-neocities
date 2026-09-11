@@ -163,9 +163,15 @@ body {
   #toggleBG {
     display: none;
   }
+
+  .title {
+    padding: 3px 30px 3px;
+  }
   
   .homeButton {
     max-width: 80vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   .leftSidebar, .rightSidebar {
