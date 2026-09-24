@@ -130,10 +130,12 @@ section {
   cursor: pointer;
 }
 
+
 .homeButton.projectButton {
   margin-top: 30px;
   max-width: fit-content;
 }
+
 
 #toggleBG {
   position: fixed;
