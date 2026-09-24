@@ -15,7 +15,7 @@ h3 {
 
 body {
   background-image: url("about.gif");
-  animation: loopingText 50s linear infinite;
+  animation: loopingText 4s linear infinite;
   height: 100vh;
 }
 

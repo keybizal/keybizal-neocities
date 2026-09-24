@@ -88,7 +88,7 @@ section {
 
 body {
     background-image: url("blog.gif");
-    animation: loopingText 110s linear infinite;
+    animation: loopingText 6s linear infinite;
     height: 100vh;
 }
 

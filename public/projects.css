@@ -76,7 +76,7 @@ section {
 
 body {
   background-image: url("projects.gif");
-  animation: loopingText 50s linear infinite;
+  animation: loopingText 4s linear infinite;
   height: 100vh;
 }
 
@@ -121,11 +121,8 @@ body {
     border: 2px solid white;
   }
 
-  #legacy {
+  .homeButton.projectButton {
     width: 320px;
-  }
-
-  #legacy .homeButton {
     padding: 15px 30px 15px;
   }
 }
@@ -140,11 +137,8 @@ body {
     border: 2px solid white;
   }
 
-  #legacy {
+  .homeButton.projectButton {
     width: 320px;
-  }
-
-  #legacy .homeButton {
     padding: 15px 30px 15px;
   }
 }

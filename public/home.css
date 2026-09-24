@@ -141,7 +141,7 @@ a, a:visited, a:hover, a:active {
 
 body {
   background-image: url("home.gif");
-  animation: loopingText 30s linear infinite;
+  animation: loopingText 2s linear infinite;
   height: 100vh;
 }
 
@@ -150,11 +150,21 @@ body {
 
 @keyframes loopingText {
   0% {
-    background-position: 0% 0%;
+    background-position: 0px 0px;
   }
 
   100% {
-    background-position: 100% 100%;
+    background-position: 180px 80px;
+  }
+}
+
+@keyframes loopingDead {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: 420px 100px;
   }
 }
 
