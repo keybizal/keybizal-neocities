@@ -69,7 +69,7 @@ body {
   height: 50px;
   column-gap: 5px;
   margin-top: 5px;
-  
+
 }
 
 
@@ -130,12 +130,24 @@ section {
   cursor: pointer;
 }
 
-
 .homeButton.projectButton {
   margin-top: 30px;
   max-width: fit-content;
 }
 
+.homeButton.staticButton {
+  display: inline;
+  position: static;
+  max-width: 300px;
+  padding: 15px 15px 15px;
+}
+
+.homeButton.mobileButton {
+  display: inline;
+  position: static;
+  max-width: 200px;
+  padding: 15px 15px 15px;
+}
 
 #toggleBG {
   position: fixed;
@@ -187,12 +199,13 @@ a:active {
     font-size: small;
     width: 62px
   }
-  
+
   section {
     max-width: 320px;
     padding-left: 10px;
     padding-right: 10px;
   }
+
   /*
   #toggleBG {
     display: block !important;

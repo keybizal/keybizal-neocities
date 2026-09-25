@@ -1,17 +1,17 @@
-body{
-    justify-content: left ;
+body {
+  justify-content: left;
 }
 
 .rightSidebar h1 {
-    color: #C5EFCB;
+  color: #C5EFCB;
 }
 
 h3 {
-    color: #A9C5A0;
+  color: #A9C5A0;
 }
 
 h4 {
-    color: #7f9478;
+  color: #7f9478;
 }
 
 b {
@@ -32,29 +32,29 @@ i {
 }
 
 .menu {
-    position: fixed;
-    left: 10%;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    height: 100vh;
+  position: fixed;
+  left: 10%;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 100vh;
 }
 
 .siteNavigation {
-    width: 480px !important;
+  width: 480px !important;
 }
 
 #Button5 {
-    background: black;
-    color: #C5EFCB;
-    border-color: #C5EFCB;
-    cursor: crosshair;
+  background: black;
+  color: #C5EFCB;
+  border-color: #C5EFCB;
+  cursor: crosshair;
 }
 
 section {
-    width: 480px !important;
-    padding: 15px 50px 15px !important;
+  width: 480px !important;
+  padding: 15px 50px 15px !important;
 }
 
 .rightSidebar {
@@ -74,46 +74,46 @@ section {
 }
 
 .rightSidebar div[id] {
-    display: none;
+  display: none;
 }
 
 
 .rightSidebar div[id]:target {
-    display: block;
+  display: block;
 }
 
 .rightSidebar:target {
-    display: block;
+  display: block;
 }
 
 body {
-    background-image: url("blog.gif");
-    animation: loopingText 6s linear infinite;
-    height: 100vh;
+  background-image: url("blog.gif");
+  animation: loopingText 6s linear infinite;
+  height: 100vh;
 }
 
 img {
-    display: block;
-    margin: auto;
-    width: 50%;
-    max-height: 300px;
-    object-fit: contain;
+  display: block;
+  margin: auto;
+  width: 50%;
+  max-height: 300px;
+  object-fit: contain;
 }
 
 .homeButton {
-    display: flex;
-    position: fixed;
-    top: 85vh;
-    left: 10px;
-    align-self: center;
-    max-width: 90px !important;
-    padding: 15px 15px 15px !important;
+  display: flex;
+  position: fixed;
+  top: 85vh;
+  left: 10px;
+  align-self: center;
+  max-width: 90px !important;
+  padding: 15px 15px 15px !important;
 }
 
 #toggleBG {
-    display: block;
-    position: fixed !important;
-    min-width: 150px;
+  display: block;
+  position: fixed !important;
+  min-width: 150px;
 
 }
 
@@ -135,22 +135,60 @@ ul {
   padding-left: 30px;
 }
 
+.dropdown {
+  display: none;
+}
+
+#exitButton {
+  display: none;
+}
+
+
 @media only screen and (max-width: 900px) {
 
   html {
     scroll-behavior: smooth;
   }
-    
 
-  .rightSidebar {
-    display:none;
+  .menu {
     position: relative;
-    margin-left: 0;
-    width: 100vw;
-    max-width: 500px;
+    left: 0;
   }
 
-  div .title, .sidebar {
+  .rightSidebar {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    max-width: none;
+    overflow-y: scroll;
+  }
+
+  rightSidebar div[id] {
+    display: none;
+  }
+
+
+  .rightSidebar div[id]:target {
+    display: block;
+  }
+
+  .rightSidebar:target {
+    display: block;
+  }
+
+  #exitButton {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 68px;
+    z-index: 99;
+  }
+
+  div .title,
+  .sidebar {
     display: none;
   }
 
@@ -164,18 +202,50 @@ ul {
     top: 86vh;
     left: 82vw;
     align-self: center;
-    max-width: 90px !important;
+    max-width: 180px !important;
     padding: 15px 15px 15px !important;
   }
-  /*
-  #toggleBG {
-    display: block !important;
-    position: fixed !important;
-    bottom: 1vh !important;
-    right: 95vw !important;
-    max-width: 120px !important;
-    z-index: 99;
+
+  /* Below are fnecessary css for the hamburger menu to work (thank you W3 Schools for the code) */
+  .dropbtn {
+    font-size: 16px;
+    cursor: pointer;
   }
-  */
+
+  /* container for hamburger menu */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* only shown when button is pressed */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* inside the menu are the links */
+  .dropdown-content a {
+    color: white !important;
+    padding: 12px 16px;
+    text-decoration: none !important;
+    display: block;
+    font-family: "Faculty Glyphic", sans-serif;
+  }
+
+  /* color of links on hover */
+  .dropdown-content a:hover {
+    background-color: #C5EFCB;
+    color: black !important;
+  }
+
+  /* the javascript needs this */
+  .show {
+    display: block;
+  }
 
 }

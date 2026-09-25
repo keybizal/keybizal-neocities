@@ -38,13 +38,38 @@
 
                 <div class="altTitle">
                     <h1>blog</h1>
-                    <h2>best on desktop</h2>
-                    <img src="blog_pictures/6_4_jollybee.gif">
+                    <h2>witness the horrors (on mobile)</h2>
+                    <img src="self3.gif">
                 </div>
+                <!--FOR MOBILE-->
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn homeButton staticButton">hamburger menu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <h2 style="color: white; font-family: 'Faculty Glyphic', sans-serif;">pins</h2>
+                        <hr>
+                        <a href="#9" onclick="openBlog()">welcome v2</a>
+                        <hr>
+                        <h2 style="color: white; font-family: 'Faculty Glyphic', sans-serif;">2025</h2>
+                        <hr>
+                        <a href="#1" onclick="openBlog()">welcome</a>
+                        <a href="#2" onclick="openBlog()">chromebook catastrophe</a>
+                        <a href="#3" onclick="openBlog()">calculus struggles</a>
+                        <hr>
+                        <h2 style="color: white; font-family: 'Faculty Glyphic', sans-serif;">2026</h2>
+                        <hr>
+                        <a href="#4" onclick="openBlog()">gaming & the paradox of choice</a>
+                        <a href="#5" onclick="openBlog()">20XX: a music odyssey</a>
+                        <a href="#6" onclick="openBlog()">the blog that never existed</a>
+                        <a href="#7" onclick="openBlog()">drifting through summer</a>
+                        <a href="#9" onclick="openBlog()"" style="padding-bottom: 100px" ">welcome v2</a>
+                    </div>
+                </div>
+                <button onclick="closeBlog() "id="exitButton" class="homeButton staticButton">exit</button>
+                <!--FOR MOBILE-->
                 <!--blog entries are linked here-->
                 <div class="sidebar">
                     <section id="entries">
-                        <h2>pinned blogs</h2>
+                        <h2>pins</h2>
                         <a href="#9">9/11/2026 - welcome v2</a><br>
                         <br>
                         <h2>2025</h2>
@@ -59,14 +84,14 @@
                         <a href="#7">5/9/2026 - calculus struggles II</a><br>
                         <a href="#8">8/8/2026 - drifting through summer</a><br>
                         <a href="#9">9/11/2026 - welcome v2</a><br>
-                        <a href="#10" style="color: grey;">??/??/2026 - soldering success rate</a><br>
+                        <a href="#10" style="color: grey;">??/??/2026 - ?????????</a><br>
                         <br>
                     </section>
 
                 </div>
             </div>
                 <!--create entry here-->
-            <aside class="rightSidebar">
+            <aside id="blogUI" class="rightSidebar">
                 <div id="1">
                     <h1>welcome to my blog</h1>
                     <br>
