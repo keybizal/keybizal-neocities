@@ -1,3 +1,187 @@
+body{
+    justify-content: left ;
+}
+
+.rightSidebar h1 {
+    color: #C5EFCB;
+}
+
+h3 {
+    color: #A9C5A0;
+}
+
+h4 {
+    color: #7f9478;
+}
+
+b {
+  color: #d6a4ff;
+}
+
+i {
+  color: #daffdf;
+}
+
+.container {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.menu {
+    position: fixed;
+    left: 10%;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 100vh;
+}
+
+.siteNavigation {
+    width: 480px !important;
+}
+
+section {
+    width: 480px !important;
+    padding: 15px 50px 15px !important;
+}
+
+.rightSidebar {
+  position: relative;
+  margin-left: 650px;
+  box-sizing: border-box;
+  background-color: black;
+  border: dashed #58189A 2px;
+  color: white;
+  height: fit-content;
+  width: 50%;
+  max-width: 800px;
+  padding: 20px;
+  line-height: 30px;
+
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+
+.rightSidebar div[id] {
+    display: none;
+}
+
+
+.rightSidebar div[id]:target {
+    display: block;
+}
+
+.rightSidebar:target {
+    display: block;
+}
+*/
+body {
+    background-image: url("blog.gif");
+    animation: loopingText 6s linear infinite;
+    height: 100vh;
+}
+/*
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-height: 300px;
+    object-fit: contain;
+}
+*/
+.homeButton {
+    display: flex;
+    position: fixed;
+    top: 85vh;
+    left: 10px;
+    align-self: center;
+    max-width: 90px !important;
+    padding: 15px 15px 15px !important;
+}
+
+#toggleBG {
+    display: block;
+    position: fixed !important;
+    min-width: 150px;
+
+}
+
+.altTitle {
+  display: none;
+
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  color: gray;
+  font-family: "Faculty Glyphic", sans-serif;
+  background-color: black;
+
+  padding: 5px 50px 5px;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  html {
+    scroll-behavior: smooth;
+  }
+    
+
+  .rightSidebar {
+    display:none;
+    position: relative;
+    margin-left: 0;
+    width: 100vw;
+    max-width: 500px;
+  }
+
+  div .title, .sidebar {
+    display: none;
+  }
+
+  .altTitle {
+    display: block;
+  }
+  
+  .homeButton.mobileButton {
+    display: inline;
+    position: static;
+    max-width: 300px !important;
+    padding: 15px 15px 15px !important;
+  }
+
+}
+
+
+.homeButton.staticButton {
+    display: inline;
+    position: static;
+    max-width: 300px !important;
+    padding: 15px 15px 15px !important;
+  }
+
+/*
+*BLOG.CSS
+*
+*
+*
+*
+*PROJECTS.CSS
+*/
+
+
+
+
+
 #Button3 {
   background: black;
   color: #C5EFCB;
@@ -11,7 +195,7 @@
   background-color: black;
   border: solid black 10px;
 
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto;
 
   column-gap: 20px;
   row-gap: 20px;
@@ -24,7 +208,7 @@
   background-color: black;
   border: solid black 10px;
 
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto;
 
   column-gap: 20px;
   row-gap: 20px;
@@ -33,24 +217,24 @@
 
 .grid-item {
   color: black;
-  border: 1px solid white;
+  border: 1px solid black;
   font-size: 30px;
   text-align: center;
 
   min-width: 0;
   min-height: 0;
-  max-width: 300px;
-  max-height: 300px;
+  /*max-width: 100px;*/
+  max-height: 1000px;
 }
 
 .grid-item img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   min-width: 100%;
   min-height: 100%;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 250px;
+  max-height: 500px;
 }
 
 img.fill {
@@ -70,78 +254,22 @@ img.right {
 }
 
 
-section {
-  width: 1200px !important;
-}
-
 body {
   background-image: url("projects.gif");
   animation: loopingText 4s linear infinite;
   height: 100vh;
 }
 
-@media only screen and (max-width: 1250px) {
-  #toggleBG {
-    display: none;
-  }
+.looping {
+  animation: loop 0.5s alternate-reverse infinite;
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 720px){
-
-  .menu {
-    max-width: 500px;
-  }
-
-  .title {
-    padding: 0;
-  }
-
-  .siteNavigation {
-    justify-content: center;
-    max-width: 340px;
-  }
-
-  .navButton {
-    font-size: small;
-    width: 62px
+@keyframes loop {
+  0% {
+    color: #C5EFCB;
   }
   
-  section {
-    max-width: 620px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .projects {
-    max-width: 620px;
-
-  }
-
-  .grid-item {
-    border: 2px solid white;
-  }
-
-
-  .homeButton.projectButton {
-    width: 320px;
-    padding: 15px 30px 15px;
+  100% {
+    color: #58189A;
   }
 }
-
-
-@media only screen and (max-width: 720px) {
-  .projects {
-    max-width: 320px;
-
-  }
-  
-  .grid-item {
-    border: 2px solid white;
-  }
-
-  .homeButton.projectButton {
-    width: 320px;
-    padding: 15px 30px 15px;
-  }
-}
-
