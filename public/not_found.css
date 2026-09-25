@@ -39,16 +39,16 @@ body {
 
 body {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='100px'><text x='0' y='15' fill='purple' font-size='20' font-family='Courier New'>404</text></svg>");
-  animation: loopingText 30s linear infinite;
+  animation: loopingText 3s linear infinite;
   height: 100vh;
 }
 
 @keyframes loopingText {
   0% {
-    background-position: 0% 0%;
+    background-position: 0px 0px;
   }
 
   100% {
-    background-position: 100% 100%;
+    background-position: 100px 100px;
   }
 }

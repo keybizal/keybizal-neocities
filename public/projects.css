@@ -1,17 +1,21 @@
-body{
-    justify-content: left ;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  justify-content: left;
 }
 
 .rightSidebar h1 {
-    color: #C5EFCB;
+  color: #C5EFCB;
 }
 
 h3 {
-    color: #A9C5A0;
+  color: #A9C5A0;
 }
 
 h4 {
-    color: #7f9478;
+  color: #7f9478;
 }
 
 b {
@@ -32,22 +36,22 @@ i {
 }
 
 .menu {
-    position: fixed;
-    left: 10%;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    height: 100vh;
+  position: fixed;
+  left: 10%;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 100vh;
 }
 
 .siteNavigation {
-    width: 480px !important;
+  width: 480px !important;
 }
 
 section {
-    width: 480px !important;
-    padding: 15px 50px 15px !important;
+  width: 480px !important;
+  padding: 15px 50px 15px !important;
 }
 
 .rightSidebar {
@@ -68,46 +72,38 @@ section {
 
 
 .rightSidebar div[id] {
-    display: none;
+  display: none;
 }
 
 
 .rightSidebar div[id]:target {
-    display: block;
+  display: block;
 }
 
 .rightSidebar:target {
-    display: block;
+  display: block;
 }
-*/
-body {
-    background-image: url("blog.gif");
-    animation: loopingText 6s linear infinite;
-    height: 100vh;
+
+*/ body {
+  background-image: url("blog.gif");
+  animation: loopingText 6s linear infinite;
+  height: 100vh;
 }
-/*
-img {
-    display: block;
-    margin: auto;
-    width: 50%;
-    max-height: 300px;
-    object-fit: contain;
-}
-*/
+
 .homeButton {
-    display: flex;
-    position: fixed;
-    top: 85vh;
-    left: 10px;
-    align-self: center;
-    max-width: 90px !important;
-    padding: 15px 15px 15px !important;
+  display: flex;
+  position: fixed;
+  top: 85vh;
+  left: 10px;
+  align-self: center;
+  max-width: 90px !important;
+  padding: 15px 15px 15px !important;
 }
 
 #toggleBG {
-    display: block;
-    position: fixed !important;
-    min-width: 150px;
+  display: block;
+  position: fixed !important;
+  min-width: 150px;
 
 }
 
@@ -128,59 +124,14 @@ img {
 ul {
   padding-left: 30px;
 }
-/*
-@media only screen and (max-width: 900px) {
 
-  html {
-    scroll-behavior: smooth;
-  }
-    
-
-  .rightSidebar {
-    display:none;
-    position: relative;
-    margin-left: 0;
-    width: 100vw;
-    max-width: 500px;
-  }
-
-  div .title, .sidebar {
-    display: none;
-  }
-
-  .altTitle {
-    display: block;
-  }
-  
-  .homeButton.mobileButton {
-    display: inline;
-    position: static;
-    max-width: 300px !important;
-    padding: 15px 15px 15px !important;
-  }
-
-}
-*/
-
+/*DO NOT REMOVE*/
 .homeButton.staticButton {
-    display: inline;
-    position: static;
-    max-width: 300px !important;
-    padding: 15px 15px 15px !important;
-  }
-
-/*
-*BLOG.CSS
-*
-*
-*
-*
-*PROJECTS.CSS
-*/
-
-
-
-
+  display: inline;
+  position: static;
+  max-width: 300px !important;
+  padding: 15px 15px 15px !important;
+}
 
 #Button3 {
   background: black;
@@ -223,8 +174,11 @@ ul {
 
   min-width: 0;
   min-height: 0;
-  /*max-width: 100px;*/
   max-height: 1000px;
+}
+
+.grid-item:hover {
+  border: 1px solid white;
 }
 
 .grid-item img {
@@ -253,7 +207,6 @@ img.right {
   object-position: right;
 }
 
-
 body {
   background-image: url("projects.gif");
   animation: loopingText 4s linear infinite;
@@ -268,39 +221,104 @@ body {
   0% {
     color: #C5EFCB;
   }
-  
+
   100% {
     color: #58189A;
   }
 }
 
-
-
-
 .desktop {
-  display: block;
+  display: contents;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 720px){
+/*************************
+*MOBILE UI PROJECTS BELOW*
+*************************/
+
+.homeButton.mobileButton {
+  display: inline;
+  position: static;
+  max-width: 200px !important;
+  padding: 15px 15px 15px !important;
+}
+
+/*GLOBAL MOBILE CONDITIONS*/
+@media only screen and (max-width: 1100px) {
+
+  div .title,
+  .sidebar {
+    display: none;
+  }
+
+  .altTitle {
+    display: block;
+  }
 
   .desktop {
     display: none;
-  } 
-  
+  }
+
   .mobile {
     display: block;
   }
 
-  .menu {
-    max-width: 620px;
+  #MButton3 {
+    background: black;
+    color: #C5EFCB;
+    border-color: #C5EFCB;
+    cursor: crosshair;
   }
 
-  .title {
-    padding: 0;
+  section {
+    width: 1200px !important;
+  }
+
+  .rightSidebar {
+    display: none;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .grid-container-sketchbook {
+    grid-template-columns: auto auto auto;
+  }
+
+  .grid-item {
+    color: black;
+    border: 1px solid white;
+    font-size: 30px;
+    text-align: center;
+
+    min-width: 0;
+    min-height: 0;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 720px) {
+
+  .menu {
+    max-width: 620px;
+    position: relative;
+    left: 0;
   }
 
   .siteNavigation {
@@ -312,7 +330,7 @@ body {
     font-size: small;
     width: 62px
   }
-  
+
   section {
     max-width: 620px;
     padding-left: 10px;
@@ -321,309 +339,24 @@ body {
 
   .projects {
     max-width: 1200px;
-
   }
-
-  .grid-item {
-    border: 2px solid white;
-  }
-
-
-  .homeButton.projectButton {
-    width: 320px;
-    padding: 15px 30px 15px;
-  }
-
-
-
-
-  html {
-    scroll-behavior: smooth;
-  }
-    
-
-  .rightSidebar {
-    display:none;
-    position: relative;
-    margin-left: 0;
-    width: 100vw;
-    max-width: 500px;
-  }
-
-  div .title, .sidebar {
-    display: none;
-  }
-
-  .altTitle {
-    display: block;
-  }
-  
-  .homeButton.mobileButton {
-    display: inline;
-    position: static;
-    max-width: 200px !important;
-    padding: 15px 15px 15px !important;
-  }
-
-
-  .desktop {
-    display: none;
-  } 
-  
-  .mobile {
-    display: block;
-  }
-  
-  .menu {
-    position: relative;
-    left: 0;
-  }
-
-  .grid-item {
-    border: 2px solid white;
-  }
-
-  .homeButton.projectButton {
-    width: 320px; 
-    padding: 15px 30px 15px;
-  }
-
-  #MButton3 {
-    background: black;
-    color: #C5EFCB;
-    border-color: #C5EFCB;
-    cursor: crosshair;
-  }
-
-.grid-container {
-  display: grid;
-
-  background-color: black;
-  border: solid black 10px;
-
-  grid-template-columns: auto auto auto;
-
-  column-gap: 20px;
-  row-gap: 20px;
-
-}
-
-.grid-container-sketchbook {
-  display: grid;
-
-  background-color: black;
-  border: solid black 10px;
-
-  grid-template-columns: auto auto auto;
-
-  column-gap: 20px;
-  row-gap: 20px;
-
-}
-
-.grid-item {
-  color: black;
-  border: 1px solid white;
-  font-size: 30px;
-  text-align: center;
-
-  min-width: 0;
-  min-height: 0;
-  max-width: 300px;
-  max-height: 300px;
-}
-
-.grid-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  min-width: 100%;
-  min-height: 100%;
-  max-width: 200px;
-  max-height: 200px;
-}
-
-img.fill {
-  object-fit: fill;
-}
-
-img.contain {
-  object-fit: contain;
-}
-
-img.top {
-  object-position: top;
-}
-
-img.right {
-  object-position: right;
-}
-
-
-section {
-  width: 1200px !important;
-}
-
-body {
-  background-image: url("projects.gif");
-  animation: loopingText 4s linear infinite;
-  height: 100vh;
-}
-  
-.grid-item {
-  border: 2px solid white;
-}
-
 
 }
 
 @media only screen and (max-width: 720px) {
 
-  html {
-    scroll-behavior: smooth;
-  }
-    
-
-  .rightSidebar {
-    display:none;
-    position: relative;
-    margin-left: 0;
-    width: 100vw;
-    max-width: 500px;
-  }
-
-  div .title, .sidebar {
-    display: none;
-  }
-
-  .altTitle {
-    display: block;
-  }
-  
-  .homeButton.mobileButton {
-    display: inline;
-    position: static;
-    max-width: 200px !important;
-    padding: 15px 15px 15px !important;
-  }
-
-
-  .desktop {
-    display: none;
-  } 
-  
-  .mobile {
-    display: block;
-  }
-  
   .menu {
+    max-width: 320px;
     position: relative;
     left: 0;
   }
 
+  section {
+    max-width: 320px;
+  }
+
   .projects {
     max-width: 320px;
-
   }
-  
-  .grid-item {
-    border: 2px solid white;
-  }
-
-  .homeButton.projectButton {
-    width: 320px; 
-    padding: 15px 30px 15px;
-  }
-
-  #MButton3 {
-    background: black;
-    color: #C5EFCB;
-    border-color: #C5EFCB;
-    cursor: crosshair;
-  }
-
-.grid-container {
-  display: grid;
-
-  background-color: black;
-  border: solid black 10px;
-
-  grid-template-columns: auto auto auto;
-
-  column-gap: 20px;
-  row-gap: 20px;
-
-}
-
-.grid-container-sketchbook {
-  display: grid;
-
-  background-color: black;
-  border: solid black 10px;
-
-  grid-template-columns: auto auto auto;
-
-  column-gap: 20px;
-  row-gap: 20px;
-
-}
-
-.grid-item {
-  color: black;
-  border: 1px solid white;
-  font-size: 30px;
-  text-align: center;
-
-  min-width: 0;
-  min-height: 0;
-  max-width: 300px;
-  max-height: 300px;
-}
-
-.grid-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  min-width: 100%;
-  min-height: 100%;
-  max-width: 200px;
-  max-height: 200px;
-}
-
-img.fill {
-  object-fit: fill;
-}
-
-img.contain {
-  object-fit: contain;
-}
-
-img.top {
-  object-position: top;
-}
-
-img.right {
-  object-position: right;
-}
-
-
-section {
-  width: 1200px !important;
-}
-
-body {
-  background-image: url("projects.gif");
-  animation: loopingText 4s linear infinite;
-  height: 100vh;
-}
-
-.projects {
-    max-width: 320px;
-
-  }
-  
-.grid-item {
-  border: 2px solid white;
-}
 
 }
