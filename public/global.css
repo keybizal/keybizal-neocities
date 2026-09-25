@@ -136,6 +136,12 @@ section {
   max-width: fit-content;
 }
 
+.homeButton.staticButton {
+    display: inline;
+    position: static;
+    max-width: 300px;
+    padding: 15px 15px 15px;
+  }
 
 #toggleBG {
   position: fixed;
