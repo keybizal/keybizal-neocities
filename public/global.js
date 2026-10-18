@@ -1,13 +1,34 @@
 var savedImage = document.body.style.backgroundImage;
+var menuBG = document.getElementsByClassName("menu");
 var isToggle = false;
 
 // if button is clicked, switches backgrond to plank black in case moving text bothers people
 function toggleBackground() {
     document.body.style.backgroundImage = "url(\"\")";
+    if (document.getElementById("theLogo") != null) {
+        document.getElementById("theLogo").src = "keybizaltv_static.png";
+    }
+    if (document.getElementById("main") == null) {
+        for (var i = 0; i < menuBG.length; i++) {
+                menuBG[i].style.backgroundImage = "url(\"endportal.png\")";
+        }
+    }
+    
     if (isToggle == false) {
         isToggle = true;
     } else if (isToggle == true) {
         document.body.style.backgroundImage = savedImage;
+
+            if (document.getElementById("theLogo") != null) {
+                document.getElementById("theLogo").src = "keybizaltv.gif";
+            }
+
+            if (document.getElementById("main") == null) {
+                for (var i = 0; i < menuBG.length; i++) {
+                    menuBG[i].style.backgroundImage = "url(\"elementbg2.gif\")";
+                }
+            }
+
         isToggle = false;
     }
     localStorage.setItem("toggle", isToggle);
