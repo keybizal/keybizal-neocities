@@ -35,6 +35,13 @@ i {
   box-sizing: border-box;
 }
 
+#avatar {
+  position: absolute;
+  z-index: -1;
+  top: 30vh;
+  right: 0vh;
+}
+
 .menu {
   position: fixed;
   left: 10%;
